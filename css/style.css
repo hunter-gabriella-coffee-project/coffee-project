@@ -8,7 +8,8 @@
 .right-col {
     border: 1px solid #000;
     border-radius: 6px;
-    background-color: rgba(0, 0, 0, 30%)
+    background-color: rgba(0, 0, 0, 30%);
+    height: fit-content;
 }
 
 header h1 {
@@ -56,15 +57,16 @@ select {
     min-height: 30px;
 }
 .submit-btn {
-    min-height: 35px;
-    margin-top: 15px;
-    background-color: #2570a9;
+    min-height: 40px;
+    margin-top: 20px;
+    background-color: #EAC58A;
     color: white;
     border: none;
     border-radius: 6px;
     font-size: 20px;
     text-align: center;
 }
+
 .add-coffee-label, .search-coffee-label {
     display: flex;
     justify-content: center;

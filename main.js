@@ -21,23 +21,20 @@
 
     let coffeeInput = document.querySelector('#coffee-name');
     let coffeeList = document.querySelector('#coffee-list');
-    let topSubmitBtn = document.querySelector('#top-submit-btn');
     let selectedRoast = document.querySelector('#roast1');
     let newRoast = document.querySelector('#roast2');
     let newCoffee = document.querySelector('#custom-coffee-name');
-    let bottomSubmitBtn = document.querySelector('#bottom-submit-btn');
+    let submitBtn = document.querySelector('#submit-btn');
 
 
     // adds coffees to left column of screen
     coffeeList.innerHTML = renderCoffees(coffees);
     // Roast dropdown menu
     selectedRoast.addEventListener('change', updateCoffees);
-    // submit button for choosing a coffee
-    topSubmitBtn.addEventListener('click', updateCoffees);
     // Coffee search input
     coffeeInput.addEventListener('keyup', coffeeSearch);
     // submit button for adding new coffee
-    bottomSubmitBtn.addEventListener('click', createNewCoffee);
+    submitBtn.addEventListener('click', createNewCoffee);
 
 
     function renderCoffee(coffee) {
